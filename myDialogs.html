@@ -16,16 +16,16 @@
     <script src="./jquery-1.8.3.min.js"></script>
     <script>
         $('#btn1').click(function () {
-            alert('无回调情况，当做只是提示，所以没有否的按钮')
+            Dialogs('无回调情况，当做只是提示，所以没有否的按钮')
         })
         $('#btn2').click(function () {
-            alert('有回调时，点击是会执行回调，否则不执行', function () {
-                alert('触发回调')
+            Dialogs('有回调时，点击是会执行回调，否则不执行', function () {
+                Dialogs('触发回调')
             })
         })
         $('#btn3').click(function () {
-            alert('有回调时，点击是会执行回调，否则不执行,(测试文字自适应，测试文字自适应，测试文字自适应，测试文字自适应，测试文字自适应)', function () {
-                alert('触发回调')
+            Dialogs('有回调时，点击是会执行回调，否则不执行,(测试文字自适应，测试文字自适应，测试文字自适应，测试文字自适应，测试文字自适应)', function () {
+                Dialogs('触发回调')
             }, '这是标题')
         })
     </script>
