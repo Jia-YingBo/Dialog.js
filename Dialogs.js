@@ -19,6 +19,11 @@ window.Dialogs = function (msg, callback, title) {
         dialogsClose = this.document.getElementById("dialogsClose"),
         dialogSure = document.getElementById("dialogSure");
 
+    if (typeof callback !== 'function') {
+        title = callback;
+        callback = '';
+    }
+
     dialogs.style.display = 'block';
     title ? dialogsTitle.innerHTML = title.toString() : dialogsTitle.innerHTML = '';
     dialogMsg.innerHTML = msg.toString();
