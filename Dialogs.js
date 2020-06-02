@@ -44,7 +44,6 @@ window.Dialogs = function (msg, callback, title) {
         document.getElementById("dialogsMask").onclick = function () { return false; };
     }
     for (i = 0; i < dialogsClose.length; i++) {
-        console.log(dialogsClose[i])
         dialogsClose[i].onclick = function () { dialogClick(false) };
     }
     dialogSure.onclick = function () { dialogClick(true) };
